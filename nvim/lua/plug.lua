@@ -36,4 +36,14 @@ return require('packer').startup(function(use)
 }
     use { 'windwp/nvim-ts-autotag' }
     use { 'maxmellon/vim-jsx-pretty' }
+    use { 'williamboman/nvim-lsp-installer' }
+    use { 'neovim/nvim-lspconfig' }
+    use { 'jose-elias-alvarez/null-ls.nvim' }
+    use { 'hrsh7th/nvim-cmp' }
+    use { 'hrsh7th/cmp-nvim-lsp' }
+    use {
+        "L3MON4D3/LuaSnip",
+        tag = "v<CurrentMajor>.*",
+        run = "make install_jsregexp"
+    }
 end)

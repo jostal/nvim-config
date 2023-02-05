@@ -29,3 +29,17 @@ require('nvim-treesitter.configs').setup {
         enable = true,
     }
 }
+require('nvim-lsp-installer').setup({
+    -- List of servers to automatically install
+    ensure_installed = { 'pyright', 'tsserver', 'eslint', 'bashls', 'cssls', 'html', 'sumneko_lua', 'jsonls', 'clangd', 'lemminx', 'rust-analyzer', 'svelte', 'toml' },
+    automatic_installation = true,
+    ui = {
+        icons = {
+            server_installed = "✓",
+            server_pending = "➜",
+            server_uninstalled = "✗"
+        }
+    }
+})
+
+require('lsp-setup')
