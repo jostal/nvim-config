@@ -39,6 +39,7 @@ M.mason_packages = {
     "lua-language-server",
     "prettierd",
     "rust-analyzer",
+    "svelte-language-server",
 }
 
 M.lsp_servers = {
@@ -53,6 +54,7 @@ M.lsp_servers = {
     "cssls",
     "html",
     "rust_analyzer",
+    "svelte",
 }
 
 function M.on_attach(on_attach)
