@@ -1,8 +1,6 @@
 local M = {
     "simrat39/rust-tools.nvim",
-    opts = function()
-        vim.list_extend(opts.ensure_installed, { "rust" })
-    end,
+    event = "BufReadPre",
     config = function(_, opts)
         require("rust-tools").setup({
             tools = {
