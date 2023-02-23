@@ -5,6 +5,7 @@ local M = {
     dependencies = {
         "nvim-treesitter/nvim-treesitter-refactor",
         "nvim-treesitter/nvim-treesitter-context",
+        "windwp/nvim-ts-autotag",
     },
     opts = {
         highlight = {
